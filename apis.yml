@@ -1,7 +1,24 @@
 aid: deep-6-ai
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/deep-6-ai.png
 name: Deep 6 AI
-description: Deep 6 AI is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Deep 6 AI was a clinical-trial acceleration company that used artificial intelligence and
+  natural language processing to mine structured and unstructured clinical data in electronic health
+  records, matching eligible patients to clinical trials in minutes rather than months. The Techstars-backed
+  precision-research platform was acquired by Tempus AI in early 2024, after which its standalone deep6.ai
+  web presence was retired (the domain no longer serves a site, though its email/DNS records remain active).
+  No public developer program, API documentation, OpenAPI specification, SDKs, or package registry entries
+  could be found for Deep 6 AI during enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/deep-6-ai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,21 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+x-status: acquired
+x-acquired-by: tempus-ai
+x-public-surface: retired
 tags:
 - Company
+- Clinical Trials
+- Healthcare
+- Artificial Intelligence
+- Machine Learning
+- Natural Language Processing
+- Electronic Health Records
+- Precision Medicine
+- Patient Matching
+- Life Sciences
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +50,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/deep-6-ai-domain-security.yml
 - type: Website
   url: https://deep6.ai/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
